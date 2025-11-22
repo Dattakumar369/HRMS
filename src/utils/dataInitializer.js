@@ -6,18 +6,23 @@ export const initializeDemoData = () => {
   }
 
   // Default users
+  // NOTE: These are demo credentials for testing purposes only
+  // In production, passwords should be hashed and stored securely
+  const DEMO_ADMIN_PASSWORD = process.env.REACT_APP_DEMO_ADMIN_PASSWORD || 'demo_admin';
+  const DEMO_EMP_PASSWORD = process.env.REACT_APP_DEMO_EMP_PASSWORD || 'demo_emp';
+  
   const users = [
     {
       id: 'admin1',
       email: 'admin@ems.com',
-      password: 'admin123',
+      password: DEMO_ADMIN_PASSWORD,
       role: 'Admin',
       name: 'Admin User'
     },
     {
       id: 'emp1',
       email: 'priya.sharma@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Priya Sharma',
       employeeId: 'EMP001'
@@ -25,7 +30,7 @@ export const initializeDemoData = () => {
     {
       id: 'emp2',
       email: 'anjali.patel@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Anjali Patel',
       employeeId: 'EMP002'
@@ -33,7 +38,7 @@ export const initializeDemoData = () => {
     {
       id: 'emp3',
       email: 'kavya.reddy@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Kavya Reddy',
       employeeId: 'EMP003'
@@ -41,7 +46,7 @@ export const initializeDemoData = () => {
     {
       id: 'emp4',
       email: 'meera.singh@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Meera Singh',
       employeeId: 'EMP004'
@@ -49,7 +54,7 @@ export const initializeDemoData = () => {
     {
       id: 'emp5',
       email: 'divya.kumar@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Divya Kumar',
       employeeId: 'EMP005'
@@ -57,7 +62,7 @@ export const initializeDemoData = () => {
     {
       id: 'emp6',
       email: 'sneha.iyer@ems.com',
-      password: 'emp123',
+      password: DEMO_EMP_PASSWORD,
       role: 'Employee',
       name: 'Sneha Iyer',
       employeeId: 'EMP006'

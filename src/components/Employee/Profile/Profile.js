@@ -13,6 +13,7 @@ const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({});
   const [imageError, setImageError] = useState(false);
+  const [showImageModal, setShowImageModal] = useState(false);
 
   useEffect(() => {
     const currentUser = getCurrentUser();
@@ -64,7 +65,7 @@ const Profile = () => {
         <div className="profile-header-section">
           <div className="profile-image-container">
             <div className="profile-background"></div>
-            <div className="profile-avatar-wrapper">
+            <div className="profile-avatar-wrapper" onClick={() => setShowImageModal(true)} style={{ cursor: 'pointer' }}>
               {!imageError ? (
                 <img
                   src={getEmployeeAvatar(employee)}
@@ -77,7 +78,7 @@ const Profile = () => {
                   {getInitials(employee.name)}
                 </div>
               )}
-              <label className="avatar-upload-label" title="Change Profile Picture">
+              <label className="avatar-upload-label" title="Change Profile Picture" onClick={(e) => e.stopPropagation()}>
                 <input
                   type="file"
                   accept="image/*"
@@ -389,6 +390,28 @@ const Profile = () => {
           </div>
         )}
       </div>
+
+      {/* Image Modal */}
+      {showImageModal && (
+        <div className="image-modal-overlay" onClick={() => setShowImageModal(false)}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="image-modal-close-btn" onClick={() => setShowImageModal(false)}>&times;</button>
+            {!imageError ? (
+              <img 
+                src={getEmployeeAvatar(employee)} 
+                alt={employee.name} 
+                className="full-size-image" 
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <div className="image-modal-fallback">
+                {getInitials(employee.name)}
+              </div>
+            )}
+            <p className="image-modal-name">{employee.name}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

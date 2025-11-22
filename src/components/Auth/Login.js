@@ -80,9 +80,8 @@ const Login = () => {
         </form>
 
         <div className="demo-credentials">
-          <p><strong>Demo Credentials:</strong></p>
-          <p>Admin: admin@ems.com / admin123</p>
-          <p>Employee: employee@ems.com / emp123</p>
+          <p><strong>Demo Application - For Testing Only</strong></p>
+          <p>Contact administrator for access credentials</p>
         </div>
       </div>
 

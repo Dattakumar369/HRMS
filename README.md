@@ -52,13 +52,15 @@ The application will open at `http://localhost:3000`
 
 ## Demo Credentials
 
+**Note:** This is a demo application. Credentials are for testing purposes only.
+
 ### Admin Login
 - **Email**: admin@ems.com
-- **Password**: admin123
+- **Password**: demo_admin_2024
 
 ### Employee Login
 - **Email**: priya.sharma@ems.com (or any employee email)
-- **Password**: emp123
+- **Password**: demo_emp_2024
 
 **Available Employee Accounts:**
 - priya.sharma@ems.com
@@ -67,6 +69,14 @@ The application will open at `http://localhost:3000`
 - meera.singh@ems.com
 - divya.kumar@ems.com
 - sneha.iyer@ems.com
+
+## Environment Variables
+
+For demo purposes, you can set these environment variables (optional):
+- `REACT_APP_DEMO_ADMIN_PASSWORD` - Demo admin password
+- `REACT_APP_DEMO_EMP_PASSWORD` - Demo employee password
+
+**Security Note:** In production, implement proper authentication with password hashing and secure storage.
 
 ## Project Structure
 

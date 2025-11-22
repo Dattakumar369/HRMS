@@ -103,10 +103,11 @@ const EmployeeForm = ({ employee, onClose }) => {
       
       // Also add to users
       const users = getStorageData('ems_users');
+      const DEMO_EMP_PASSWORD = process.env.REACT_APP_DEMO_EMP_PASSWORD || 'demo_emp_2024';
       const newUser = {
         id: newEmployee.id,
         email: newEmployee.email,
-        password: 'emp123', // Default password
+        password: DEMO_EMP_PASSWORD, // Demo password - should be changed on first login in production
         role: 'Employee',
         name: newEmployee.name
       };
