@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/HRMS/static/css/main.d0b5a573.css",
+    "main.js": "/HRMS/static/js/main.ca0ee57a.js",
+    "static/js/239.bea84e58.chunk.js": "/HRMS/static/js/239.bea84e58.chunk.js",
+    "static/js/213.c22d7b83.chunk.js": "/HRMS/static/js/213.c22d7b83.chunk.js",
+    "static/js/455.3893113e.chunk.js": "/HRMS/static/js/455.3893113e.chunk.js",
+    "index.html": "/HRMS/index.html",
+    "main.d0b5a573.css.map": "/HRMS/static/css/main.d0b5a573.css.map",
+    "main.ca0ee57a.js.map": "/HRMS/static/js/main.ca0ee57a.js.map",
+    "239.bea84e58.chunk.js.map": "/HRMS/static/js/239.bea84e58.chunk.js.map",
+    "213.c22d7b83.chunk.js.map": "/HRMS/static/js/213.c22d7b83.chunk.js.map",
+    "455.3893113e.chunk.js.map": "/HRMS/static/js/455.3893113e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0b5a573.css",
+    "static/js/main.ca0ee57a.js"
+  ]
+}
