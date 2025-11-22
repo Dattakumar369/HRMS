@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { initializeDemoData } from './utils/dataInitializer';
 import Login from './components/Auth/Login';
 import AdminLayout from './components/Layout/AdminLayout';

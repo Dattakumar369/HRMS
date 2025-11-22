@@ -2,6 +2,7 @@
   "name": "employee-management-system",
   "version": "1.0.0",
   "description": "Employee Management System - Demo Version",
+  "homepage": "https://Dattakumar369.github.io/HRMS",
   "private": true,
   "dependencies": {
     "date-fns": "^2.30.0",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
