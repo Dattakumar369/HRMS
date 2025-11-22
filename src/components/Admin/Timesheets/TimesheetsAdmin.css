@@ -1,0 +1,97 @@
+.timesheets-admin {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.timesheets-table-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.timesheets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheets-table thead {
+  background: #f8f9fa;
+}
+
+.timesheets-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 2px solid #ddd;
+}
+
+.timesheets-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.submitted {
+  background: #ffeaa7;
+  color: #d63031;
+}
+
+.status-badge.approved {
+  background: #d5f4e6;
+  color: #00b894;
+}
+
+.status-badge.rejected {
+  background: #fee;
+  color: #c33;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-approve {
+  padding: 6px 12px;
+  background: #00b894;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-reject {
+  padding: 6px 12px;
+  background: #d63031;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
